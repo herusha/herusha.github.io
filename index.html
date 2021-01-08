@@ -33,10 +33,10 @@
             <!-- /.navigation-header -->
             <ul class="nav navigation">
                 <li class="item"><a onclick="closeDrawer()" href="#site-header" class="fa-home">Home</a></li>
-                <li class="item"><a href="#about" class="fa-user">About</a></li>
-                <li class="item"><a href="#skills" class="fa-signal">Skills</a></li>
-                <li class="item"><a href="#experiences" class="fa-bar-chart-o">Experiences</a></li>
-                <li class="item"><a href="#education" class="fa-book">Education</a></li>
+                <li class="item"><a onclick="closeDrawer()" href="#about" class="fa-user">About</a></li>
+                <li class="item"><a onclick="closeDrawer()" href="#skills" class="fa-signal">Skills</a></li>
+                <li class="item"><a onclick="closeDrawer()" href="#experiences" class="fa-bar-chart-o">Experiences</a></li>
+                <li class="item"><a onclick="closeDrawer()" href="#education" class="fa-book">Education</a></li>
             </ul>
             <!-- /.navigation -->
         </nav>
@@ -389,7 +389,7 @@
 </body>
 <script>
     function closeDrawer() {
-        console.log('clicked');
+        document.querySelector('.menu-switch').click()
     }
 
     </script>
